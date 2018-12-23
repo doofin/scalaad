@@ -27,8 +27,8 @@ lazy val commonSettings = Seq(
   organization            :=  "com.kogecoo",
   name                    <<= name("scalaad-" + _),
   version                 :=  "0.0.1-SNAPSHOT",
-  scalaVersion            :=  "2.11.7",
-  crossScalaVersions      := Seq("2.11.7"),
+  scalaVersion            :=  "2.12.7",
+  crossScalaVersions      := Seq("2.12.7"),
   scalacOptions           ++= commonScalacOptions,
   resolvers               ++= commonResolvers,
   libraryDependencies     ++= commonLibraryDependencies
@@ -60,8 +60,8 @@ lazy val commonResolvers = Seq(
 )
 
 lazy val commonLibraryDependencies = Seq(
-  "org.scalacheck" %% "scalacheck" % "1.12.5" % "test",
-  "org.scalatest" %% "scalatest" % "2.2.4" % "test"
+  "org.scalacheck" %% "scalacheck" % "+" % "test",
+  "org.scalatest" %% "scalatest" % "+" % "test"
 )
 
 lazy val commonPomExtra = {
